@@ -33,4 +33,12 @@ $(document).on('ready', function() {
 			return false;
 		}
 	});
+
+	$('button').click(function() {
+		$('body').html("<div class=\"fixed-center-box\"><p>Some text and some more text.</p><p>Well, it is some more text, and again.</p><img src=\"http://placekitten.com/100/100\"><br><button>Close</button></div>");
+	});
+
+	$('.fixed-center-box > button').click(function() {
+		$('div.fixed-center-box').remove();
+	});
 });
