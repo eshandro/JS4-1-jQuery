@@ -1,0 +1,13 @@
+body {
+	background-color: lightslategray;
+}
+
+.giant-button {
+	width: 250px;
+	height: 150px;
+	background-color: green;
+	border: 20px solid white;
+	border-radius: 10px;
+	font-size: 24px;
+	color: white;
+}
