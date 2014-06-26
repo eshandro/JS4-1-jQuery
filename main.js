@@ -23,7 +23,7 @@ $(document).on('ready', function() {
 
 	$('h1, h2').append('!');
 
-	$('a').click(function() {
+	$('a').click(function(e) {
 		var link = $(this).attr('href');
 		var goToLink = confirm("Do you want to continue to " + link + "?");
 		if(!goToLink) {
@@ -31,6 +31,9 @@ $(document).on('ready', function() {
 			// $(this).removeAttr('href');
 			$(this).remove();
 			return false;
+			//This can also be done and be more clear
+			// this way. The above 'return false;' will only work if at end of event handler
+			// e.preventDefault();
 		}
 	});
 
